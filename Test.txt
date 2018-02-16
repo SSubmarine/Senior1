@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-Senior
-Test Github
-
-Auey
-=======
 Hostel Booking system
 Test Github 
 hello
