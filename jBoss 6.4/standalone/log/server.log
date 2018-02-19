@@ -3532,3 +3532,359 @@ JBAS014777:   Services which failed to start:      service jboss.persistenceunit
 15:13:40,359 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
 15:13:40,360 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
 15:13:40,361 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 8822ms - Started 469 of 507 services (59 services are lazy, passive or on-demand)
+18:18:02,301 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+18:18:02,943 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+18:18:03,253 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+18:18:03,270 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Admin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/d4/3zylg15d3hd3vmwb13ynbxbm0000gn/T/
+	java.library.path = /Users/Admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4
+	jboss.host.name = apple-macintosh
+	jboss.modules.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apple-macintosh
+	jboss.qualified.host.name = apple-macintosh.mshome.net
+	jboss.server.base.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone
+	jboss.server.config.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/configuration
+	jboss.server.data.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/data
+	jboss.server.deploy.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/data/content
+	jboss.server.log.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/log
+	jboss.server.name = apple-macintosh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/configuration/logging.properties
+	module.path = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/modules
+	org.jboss.boot.log.file = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.13.3
+	path.separator = :
+	program.name = JBossTools: Red Hat JBoss EAP 6.1+
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/modules -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = TH
+	user.dir = /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/bin
+	user.home = /Users/Admin
+	user.language = en
+	user.name = Toey
+	user.timezone = Asia/Bangkok
+18:18:03,273 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: Red Hat JBoss EAP 6.1+ -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/log/boot.log -Dlogging.configuration=file:/Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/configuration/logging.properties -Djboss.home.dir=/Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+18:18:06,094 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found SeniorEJBHostel.jar in deployment directory. To trigger deployment create a file called SeniorEJBHostel.jar.dodeploy
+18:18:06,154 INFO  [org.xnio] (MSC service thread 1-1) XNIO Version 3.0.13.GA-redhat-1
+18:18:06,174 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+18:18:06,177 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+18:18:06,446 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 3.3.4.Final-redhat-1
+18:18:06,516 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+18:18:06,519 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:18:06,521 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+18:18:06,578 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:18:06,554 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+18:18:06,556 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+18:18:06,631 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+18:18:06,639 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+18:18:06,775 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+18:18:06,789 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:18:07,153 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:18:07,201 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+18:18:08,258 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8181
+18:18:08,352 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8181
+18:18:08,773 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /Users/Admin/Documents/Senior_project/Senior1/jBoss 6.4/standalone/deployments
+18:18:08,860 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "SeniorEJBHostel.jar" (runtime-name: "SeniorEJBHostel.jar")
+18:18:08,933 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:4447
+18:18:08,936 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:9999
+18:18:09,132 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/MySqlDS]
+18:18:09,137 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:18:09,977 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for HostelDatabase
+18:18:10,192 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+18:18:10,815 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named BookTripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:app/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:module/BookTripServiceBean!com.mfu.service.BookTripService
+	java:jboss/exported/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:global/SeniorEJBHostel/BookTripServiceBean
+	java:app/SeniorEJBHostel/BookTripServiceBean
+	java:module/BookTripServiceBean
+
+18:18:10,817 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named BookRoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:app/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:module/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:jboss/exported/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:global/SeniorEJBHostel/BookRoomServiceBean
+	java:app/SeniorEJBHostel/BookRoomServiceBean
+	java:module/BookRoomServiceBean
+
+18:18:10,819 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named ReservationServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:app/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:module/ReservationServiceBean!com.mfu.service.ReservationService
+	java:jboss/exported/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:global/SeniorEJBHostel/ReservationServiceBean
+	java:app/SeniorEJBHostel/ReservationServiceBean
+	java:module/ReservationServiceBean
+
+18:18:10,822 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named GuestServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:app/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:module/GuestServiceBean!com.mfu.service.GuestService
+	java:jboss/exported/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:global/SeniorEJBHostel/GuestServiceBean
+	java:app/SeniorEJBHostel/GuestServiceBean
+	java:module/GuestServiceBean
+
+18:18:10,823 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:app/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:module/TripServiceBean!com.mfu.service.TripService
+	java:jboss/exported/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:global/SeniorEJBHostel/TripServiceBean
+	java:app/SeniorEJBHostel/TripServiceBean
+	java:module/TripServiceBean
+
+18:18:10,824 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named AdnimServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:app/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:module/AdnimServiceBean!com.mfu.service.AdminService
+	java:jboss/exported/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:global/SeniorEJBHostel/AdnimServiceBean
+	java:app/SeniorEJBHostel/AdnimServiceBean
+	java:module/AdnimServiceBean
+
+18:18:10,825 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named BillServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:app/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:module/BillServiceBean!com.mfu.service.BillService
+	java:jboss/exported/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:global/SeniorEJBHostel/BillServiceBean
+	java:app/SeniorEJBHostel/BillServiceBean
+	java:module/BillServiceBean
+
+18:18:10,826 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named OrderProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:app/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:module/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:jboss/exported/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:global/SeniorEJBHostel/OrderProductServiceBean
+	java:app/SeniorEJBHostel/OrderProductServiceBean
+	java:module/OrderProductServiceBean
+
+18:18:10,828 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named BookSpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:app/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:module/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:jboss/exported/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:global/SeniorEJBHostel/BookSpaServiceBean
+	java:app/SeniorEJBHostel/BookSpaServiceBean
+	java:module/BookSpaServiceBean
+
+18:18:10,830 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named SpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:app/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:module/SpaServiceBean!com.mfu.service.SpaService
+	java:jboss/exported/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:global/SeniorEJBHostel/SpaServiceBean
+	java:app/SeniorEJBHostel/SpaServiceBean
+	java:module/SpaServiceBean
+
+18:18:10,848 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named RoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:app/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:module/RoomServiceBean!com.mfu.service.RoomService
+	java:jboss/exported/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:global/SeniorEJBHostel/RoomServiceBean
+	java:app/SeniorEJBHostel/RoomServiceBean
+	java:module/RoomServiceBean
+
+18:18:10,858 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named PromotionServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:app/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:module/PromotionServiceBean!com.mfu.service.PromotionService
+	java:jboss/exported/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:global/SeniorEJBHostel/PromotionServiceBean
+	java:app/SeniorEJBHostel/PromotionServiceBean
+	java:module/PromotionServiceBean
+
+18:18:10,859 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named MemberServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:app/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:module/MemberServiceBean!com.mfu.service.MemberService
+	java:jboss/exported/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:global/SeniorEJBHostel/MemberServiceBean
+	java:app/SeniorEJBHostel/MemberServiceBean
+	java:module/MemberServiceBean
+
+18:18:10,860 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named ProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:app/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:module/ProductServiceBean!com.mfu.service.ProductService
+	java:jboss/exported/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:global/SeniorEJBHostel/ProductServiceBean
+	java:app/SeniorEJBHostel/ProductServiceBean
+	java:module/ProductServiceBean
+
+18:18:12,421 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011402: Starting Persistence Unit Service 'SeniorEJBHostel.jar#HostelDatabase'
+18:18:13,070 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+18:18:13,087 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+18:18:13,093 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+18:18:13,102 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+18:18:13,222 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: HostelDatabase
+	...]
+18:18:13,768 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 50) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+18:18:13,922 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:18:14,990 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 50) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+18:18:14,999 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+18:18:15,777 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 50) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+18:18:17,528 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000228: Running hbm2ddl schema update
+18:18:17,528 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000102: Fetching database metadata
+18:18:17,718 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000396: Updating schema
+18:18:17,806 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Admin
+18:18:17,807 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [adminpassword, adminid, adminusername]
+18:18:17,808 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:17,809 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+18:18:17,839 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Bill
+18:18:17,845 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [totalprice, billid, reservation_reservationid]
+18:18:17,846 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_7nd0f13wc8q3aiwm74wheq61s]
+18:18:17,847 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_7nd0f13wc8q3aiwm74wheq61s, primary]
+18:18:17,872 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.BookRoom
+18:18:17,873 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [bookroomid, roomprice, roombookingdate, reservation_reservationid, rooms_roomid]
+18:18:17,873 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_2dpoayiti198too7h1q9o6kdf, fk_5wwfqr68eudhjtxwjfsms4kb0]
+18:18:17,874 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_2dpoayiti198too7h1q9o6kdf, fk_5wwfqr68eudhjtxwjfsms4kb0, primary]
+18:18:17,887 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.BookSpa
+18:18:17,887 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [spaprice, personperbookingspa, spabookinddate, spa_spaid, reservation_reservationid, bookspaid]
+18:18:17,888 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_amhlfpgv237l1uajt3vewrwuc, fk_2rn6ocefeokqj6mxh1yng3o69]
+18:18:17,888 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_amhlfpgv237l1uajt3vewrwuc, fk_2rn6ocefeokqj6mxh1yng3o69, primary]
+18:18:17,905 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.BookTrip
+18:18:17,906 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [tripbookingdate, booktripid, reservation_reservationid, booktripprice, personperbookingtrip, trip_tripid]
+18:18:17,906 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_rgi5ih655iyowbgxk6w4v1hej, fk_nwkafmana9uv7ub3hsv0rxw03]
+18:18:17,906 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_rgi5ih655iyowbgxk6w4v1hej, fk_nwkafmana9uv7ub3hsv0rxw03, primary]
+18:18:17,975 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Guest
+18:18:17,986 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [guestage, guestfirstname, guestphone, guestlastname, guestaddress, guestidnumber, guestid, guestgender, guestemail, guestnationality]
+18:18:17,999 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:17,999 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+18:18:18,017 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Member
+18:18:18,018 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [memberaddress, memberfirstname, membergender, memberprofilepic, memberage, memberlastname, membernationality, memberemail, memberrace, memberidnumber, memberpassword, memberphone, memberid]
+18:18:18,018 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:18,018 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+18:18:18,027 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.OrderProduct
+18:18:18,027 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [productunit, orderproductid, reservation_reservationid, product_productid, orderproductdate, productprice]
+18:18:18,028 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_l7f87uf96vjrvoc1bcncuy9ql, fk_plhovq0wgf5g6qld4m0kunv3v]
+18:18:18,028 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_l7f87uf96vjrvoc1bcncuy9ql, fk_plhovq0wgf5g6qld4m0kunv3v, primary]
+18:18:18,059 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Product
+18:18:18,061 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [productdetail, productid, orderproduct_orderproductid, productpic, productname]
+18:18:18,067 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_iv54lbq9rqjowo0eh4hu6ufs1]
+18:18:18,068 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_iv54lbq9rqjowo0eh4hu6ufs1, primary]
+18:18:18,076 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Promotion
+18:18:18,078 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [enddate, promotioncode, promotionpic, startdate, promotionid, discountrate]
+18:18:18,078 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:18,078 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+18:18:18,091 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Reservation
+18:18:18,092 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [reservationid, guest_guestid, member_memberid, promotion_promotionid, reservationdate]
+18:18:18,092 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_ijw32w4vww8e3jx9lx80wdvfp, fk_cig3dijqpb7eltwld7f5lybpb, fk_dcphkp7tuwfmeph26xxwquiam]
+18:18:18,092 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_ijw32w4vww8e3jx9lx80wdvfp, fk_cig3dijqpb7eltwld7f5lybpb, primary, fk_dcphkp7tuwfmeph26xxwquiam]
+18:18:18,110 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Rooms
+18:18:18,116 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [roompic, bookroom_bookroomid, roomdetail, roomid, roomtype]
+18:18:18,117 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_r5jes18d0ikt6ahgfy19nv74y]
+18:18:18,117 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_r5jes18d0ikt6ahgfy19nv74y, primary]
+18:18:18,129 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Spa
+18:18:18,133 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [spapic, bookspa_bookspaid, spaid, spaname, spadetail]
+18:18:18,134 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_e66rbvjtoic7yq2g55xwwn4nu]
+18:18:18,134 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_e66rbvjtoic7yq2g55xwwn4nu, primary]
+18:18:18,142 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.Trip
+18:18:18,142 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [trippic, tripdetail, tripname, tripid]
+18:18:18,142 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:18,143 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+18:18:18,155 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: seniorhostel.hibernate_sequence
+18:18:18,155 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [next_val]
+18:18:18,156 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+18:18:18,156 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: []
+18:18:18,156 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000232: Schema update complete
+18:18:18,515 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorEJBHostel.jar" (runtime-name : "SeniorEJBHostel.jar")
+18:18:18,532 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+18:18:18,533 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:18:18,533 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 17617ms - Started 469 of 507 services (59 services are lazy, passive or on-demand)
+18:23:02,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+18:23:02,562 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8181
+18:23:02,583 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8181
+18:23:02,625 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) JBAS011403: Stopping Persistence Unit Service 'SeniorEJBHostel.jar#HostelDatabase'
+18:23:02,648 INFO  [org.apache.catalina.core] (MSC service thread 1-8) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:23:02,653 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+18:23:02,738 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment SeniorEJBHostel.jar (runtime-name: SeniorEJBHostel.jar) in 206ms
+18:23:02,755 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 214ms
