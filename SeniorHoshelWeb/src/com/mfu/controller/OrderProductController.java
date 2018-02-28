@@ -40,7 +40,7 @@ public class OrderProductController {
 	
 	@RequestMapping("/listOrderProduct")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageOrderProduct.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageOrderProduct.jsp");
 		
 		List<OrderProduct> orderProductList;
 		try {
@@ -59,7 +59,7 @@ public class OrderProductController {
 	public ModelAndView edit(HttpServletRequest request) {
 		int orderProductId = Integer.parseInt(request.getParameter("id"));
 		OrderProduct foundOrderProduct;
-		ModelAndView mv = new ModelAndView("pagesAdmin/Pages/addorderProduct.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageOrderProduct.jsp");
 		try {
 			foundOrderProduct = orderProductService.findOrderProductById(orderProductId);
 			mv.addObject("orderProduct", foundOrderProduct);

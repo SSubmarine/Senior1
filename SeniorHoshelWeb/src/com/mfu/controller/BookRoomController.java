@@ -67,7 +67,7 @@ public class BookRoomController {
 
 	@RequestMapping("/listBookRoom")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookRoom.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookRoom.jsp");
 
 		List<BookRoom> bookRoomList;
 		try {
@@ -104,7 +104,7 @@ public class BookRoomController {
 	
 	@RequestMapping("/booking")
 	public ModelAndView show(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/Booking.jsp");
+		ModelAndView mv = new ModelAndView("Booking.jsp");
 		List<Rooms> roomList;
 		List<BookRoom> bookRoomList;
 		List<Product> productList;

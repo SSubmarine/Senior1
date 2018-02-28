@@ -35,7 +35,7 @@ public class BookSpaController {
 	public ModelAndView edit(HttpServletRequest request) {
 		String bookSpaName = request.getParameter("name");
 		BookSpa foundBookSpa;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookSpa.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookSpa.jsp");
 		try {
 			foundBookSpa = bookSpaService.findBookSpaName("");
 			mv.addObject("foundBookSpa", foundBookSpa);
@@ -55,7 +55,7 @@ public class BookSpaController {
 	
 	@RequestMapping("/listBookSpa")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookSpa.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookSpa.jsp");
 		
 		List<BookSpa> bookSpaList;
 		try {

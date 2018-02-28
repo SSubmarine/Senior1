@@ -21,7 +21,7 @@ public class PromotionController {
 	
 	@RequestMapping("/newPromotion")
 	public ModelAndView newPromotion(){
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManagePromotion.jsp");
+		ModelAndView mv = new ModelAndView("AdminManagePromotion.jsp");
 		Promotion promotion = new Promotion();
 		mv.addObject("promotion",promotion);
 		return mv;
@@ -44,7 +44,7 @@ public class PromotionController {
 	public ModelAndView edit(HttpServletRequest request) {
 		String paramId = (request.getParameter("id"));
 		List<Promotion> foundPromotion;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManagePromotion.jsp");
+		ModelAndView mv = new ModelAndView("AdminManagePromotion.jsp");
 		try {
 			foundPromotion = promotionService.findPromotionByPromoCode("");
 			mv.addObject("foundpromotion", foundPromotion);
@@ -65,7 +65,7 @@ public class PromotionController {
 	
 	@RequestMapping("/listPromotion")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManagePromotion.jsp");
+		ModelAndView mv = new ModelAndView("AdminManagePromotion.jsp");
 		List<Promotion> promotionList;
 		try {
 			Promotion promotion = new Promotion();

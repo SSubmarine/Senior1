@@ -46,7 +46,7 @@ public class SpaController {
 	public ModelAndView edit(HttpServletRequest request) {
 		String spaName = request.getParameter("name");
 		Spa foundSpa;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageSpa.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageSpa.jsp");
 		try {
 			foundSpa = spaService.findSpaName("");
 			mv.addObject("foundSpa", foundSpa);
@@ -66,7 +66,7 @@ public class SpaController {
 	
 	@RequestMapping("/listSpa")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageSpa.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageSpa.jsp");
 		
 		List<Spa> spaList;
 		try {
@@ -123,7 +123,7 @@ public class SpaController {
 	 public ModelAndView edit(HttpServletRequest request) {
 	  int paramId = Integer.parseInt(request.getParameter("id"));
 	  Spa foundSpa;
-	  ModelAndView mv = new ModelAndView("Pages/production/AdminManageSpa.jsp");
+	  ModelAndView mv = new ModelAndView("AdminManageSpa.jsp");
 	  try {
 	   foundSpa = spaService.findSpaId(paramId);
 	   mv.addObject("spa", foundSpa);

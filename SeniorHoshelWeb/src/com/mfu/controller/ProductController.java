@@ -21,7 +21,7 @@ public class ProductController {
 	
 	@RequestMapping("/newProduct")
 	public ModelAndView newProduct(){
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageProduct.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageProduct.jsp");
 		Product product = new Product();
 		mv.addObject("product",product);
 		return mv;
@@ -44,7 +44,7 @@ public class ProductController {
 	public ModelAndView edit(HttpServletRequest request) {
 		int paramId = Integer.parseInt(request.getParameter("id"));
 		Product foundProduct;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageProduct.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageProduct.jsp");
 		try {
 			foundProduct = productService.findProductById(paramId);
 			mv.addObject("foundproduct", foundProduct);
@@ -65,7 +65,7 @@ public class ProductController {
 	
 	@RequestMapping("/listProduct")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageProduct.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageProduct.jsp");
 		List<Product> productList;
 		try {
 			Product product = new Product();

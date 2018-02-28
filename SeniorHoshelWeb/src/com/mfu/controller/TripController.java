@@ -35,7 +35,7 @@ public class TripController {
 	public ModelAndView edit(HttpServletRequest request) {
 	int paramId = Integer.parseInt(request.getParameter("id"));
 		Trip foundTrip;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageTrip.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageTrip.jsp");
 		try {
 			foundTrip = tripService.findTripId(paramId);
 			mv.addObject("foundTrip", foundTrip);
@@ -55,7 +55,7 @@ public class TripController {
 	
 	@RequestMapping("/listTrip")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageTrip.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageTrip.jsp");
 		List<Trip> tripList;
 		try {
 			Trip trip = new Trip();

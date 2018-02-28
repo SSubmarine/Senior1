@@ -55,7 +55,7 @@ public class RoomController {
 
  @RequestMapping("/listRoom")
  public ModelAndView list(HttpServletRequest request) {
-  ModelAndView mv = new ModelAndView("Pages/production/AdminManageRoom.jsp");
+  ModelAndView mv = new ModelAndView("AdminManageRoom.jsp");
 
   List<Rooms> roomList;
   
@@ -114,7 +114,7 @@ public class RoomController {
  public ModelAndView edit(HttpServletRequest request) {
   int paramId = Integer.parseInt(request.getParameter("id"));
   Rooms foundRoom;
-  ModelAndView mv = new ModelAndView("Pages/production/AdminManageRoom.jsp");
+  ModelAndView mv = new ModelAndView("AdminManageRoom.jsp");
   try {
    foundRoom = roomService.findRoomById(paramId);
    mv.addObject("room", foundRoom);
@@ -211,7 +211,7 @@ public class RoomController {
  
  @RequestMapping("/showRoom")
  public ModelAndView show(HttpServletRequest request) {
-  ModelAndView mv = new ModelAndView("Pages/production/Home.jsp");
+  ModelAndView mv = new ModelAndView("Home.jsp");
 
   List<Rooms> roomList;
   

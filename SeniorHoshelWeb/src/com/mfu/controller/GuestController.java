@@ -49,7 +49,7 @@ public class GuestController {
 	
 	@RequestMapping("/listGuest")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageGuest.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageGuest.jsp");
 		
 		List<Guest> guestList;
 		try {
@@ -68,7 +68,7 @@ public class GuestController {
 	public ModelAndView edit(HttpServletRequest request) {
 		int guestId = Integer.parseInt(request.getParameter("id"));
 		Guest foundGuest;
-		ModelAndView mv = new ModelAndView("pagesAdmin/Pages/addguest.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageGuest.jsp");
 		try {
 			foundGuest = guestService.findGuestId(guestId);
 			mv.addObject("guest", foundGuest);
@@ -81,7 +81,7 @@ public class GuestController {
 	
 	@RequestMapping("/newGuest")
 	public ModelAndView newGuest(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/Bookingjsp");
+		ModelAndView mv = new ModelAndView("Booking.jsp");
 		
 		List<Guest> guestList;
 		try {

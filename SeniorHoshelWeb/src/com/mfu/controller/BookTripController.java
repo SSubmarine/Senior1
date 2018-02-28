@@ -22,7 +22,7 @@ public class BookTripController {
 	
 	@RequestMapping("/newBookTrip")
 	public ModelAndView newBookTrip(){
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookTrip.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookTrip.jsp");
 		BookTrip bookTrip = new BookTrip();
 		mv.addObject("bookTrip",bookTrip);
 		return mv;
@@ -45,7 +45,7 @@ public class BookTripController {
 	public ModelAndView edit(HttpServletRequest request) {
 		String paramId = (request.getParameter("id"));
 		BookTrip foundBookTrip;
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookTrip.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookTrip.jsp");
 		try {
 			foundBookTrip = bookTripService.findBookTripByPromocode("");
 			mv.addObject("foundbookTrip", foundBookTrip);
@@ -66,7 +66,7 @@ public class BookTripController {
 	
 	@RequestMapping("/listBookTrip")
 	public ModelAndView list(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("Pages/production/AdminManageBookTrip.jsp");
+		ModelAndView mv = new ModelAndView("AdminManageBookTrip.jsp");
 		List<BookTrip> bookTripList;
 		try {
 			BookTrip bookTrip = new BookTrip();
