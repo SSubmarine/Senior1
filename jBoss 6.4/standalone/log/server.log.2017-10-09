@@ -1,0 +1,10 @@
+16:15:24,234 INFO  [org.jboss.web] (ServerService Thread Pool -- 156) JBAS018224: Unregister web context: /WebAppEJB
+16:15:24,254 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+16:15:24,320 INFO  [org.apache.catalina.core] (MSC service thread 1-8) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+16:15:24,338 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8080
+16:15:24,345 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 157) JBAS011403: Stopping Persistence Unit Service 'HelloServer1.jar#employeeDatabase'
+16:15:24,356 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8080
+16:15:24,399 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+16:15:24,454 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment HelloServer1.jar (runtime-name: HelloServer1.jar) in 217ms
+16:15:24,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment WebAppEJB.war (runtime-name: WebAppEJB.war) in 256ms
+16:15:24,506 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 240ms

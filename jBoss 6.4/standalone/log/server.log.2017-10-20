@@ -1,0 +1,939 @@
+22:31:19,234 INFO  [org.jboss.web] (ServerService Thread Pool -- 71) JBAS018224: Unregister web context: /WebAppEJB
+22:31:19,263 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 71) Destroying Spring FrameworkServlet 'spring'
+22:31:19,268 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 71) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 19 17:24:49 ICT 2017]; root of context hierarchy
+22:31:19,277 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 71) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@351ec87e: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+22:31:19,541 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 150) JBAS011403: Stopping Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+22:31:19,671 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment WebAppEJB.war (runtime-name: WebAppEJB.war) in 479ms
+22:31:19,675 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "WebAppEJB.war" (runtime-name: "WebAppEJB.war")
+22:31:21,444 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for EmployeeDatabase
+22:31:21,920 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:app/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:jboss/exported/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:global/WebAppEJB/EmployeeServiceBean
+	java:app/WebAppEJB/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+22:31:21,920 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:app/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:module/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:jboss/exported/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:global/WebAppEJB/PhoneServiceBean
+	java:app/WebAppEJB/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+22:31:21,921 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:app/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:module/SkillServiceBean!com.mfu.ejb.SkillService
+	java:jboss/exported/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:global/WebAppEJB/SkillServiceBean
+	java:app/WebAppEJB/SkillServiceBean
+	java:module/SkillServiceBean
+
+22:31:22,199 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 150) JBAS011402: Starting Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+22:31:22,209 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 150) HHH000204: Processing PersistenceUnitInfo [
+	name: EmployeeDatabase
+	...]
+22:31:22,258 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 150) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+22:31:22,267 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 150) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:31:22,312 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 150) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+22:31:22,313 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 150) HHH000397: Using ASTQueryTranslatorFactory
+22:31:22,449 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 150) HHH000228: Running hbm2ddl schema update
+22:31:22,449 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 150) HHH000102: Fetching database metadata
+22:31:22,452 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 150) HHH000396: Updating schema
+22:31:22,530 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.Address
+22:31:22,530 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [country, city, street, employee_employeeid, addressid]
+22:31:22,530 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: [fk_9uetjkgminw7eqytp90q27uli]
+22:31:22,530 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [fk_9uetjkgminw7eqytp90q27uli, primary]
+22:31:22,546 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.Customer
+22:31:22,546 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [custfirstname, password, custlastname, phone, custid, custemail, username]
+22:31:22,547 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: []
+22:31:22,547 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [primary]
+22:31:22,555 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.CustomerOrder
+22:31:22,556 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [date, customer_custid, quantity, price, custordid, productname]
+22:31:22,556 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: [fk_nk9d6tch7s69ym57mnqqinky1]
+22:31:22,556 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [fk_nk9d6tch7s69ym57mnqqinky1, primary]
+22:31:22,567 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.Employee
+22:31:22,568 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [firstname, employeeid, lastname]
+22:31:22,568 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: []
+22:31:22,568 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [primary]
+22:31:22,576 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.OrderItem
+22:31:22,577 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [quantity, productid, price, productname, customerorder_custordid]
+22:31:22,577 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: [fk_o642o3x3yvag6s9favbimf4o8]
+22:31:22,577 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [primary, fk_o642o3x3yvag6s9favbimf4o8]
+22:31:22,584 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.Phone
+22:31:22,585 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [number, phoneid, employee_employeeid, label]
+22:31:22,585 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: [fk_gv8ge3ht6n61q0qvh5hmqycxe]
+22:31:22,585 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: [fk_gv8ge3ht6n61q0qvh5hmqycxe, primary]
+22:31:22,588 INFO  [java.sql.DatabaseMetaData] (ServerService Thread Pool -- 150) HHH000262: Table not found: Skill
+22:31:22,594 INFO  [java.sql.DatabaseMetaData] (ServerService Thread Pool -- 150) HHH000262: Table not found: Skill
+22:31:22,595 INFO  [java.sql.DatabaseMetaData] (ServerService Thread Pool -- 150) HHH000262: Table not found: Skill
+22:31:22,608 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000261: Table found: epst.hibernate_sequence
+22:31:22,615 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000037: Columns: [next_val]
+22:31:22,615 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000108: Foreign keys: []
+22:31:22,615 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 150) HHH000126: Indexes: []
+22:31:22,969 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 150) HHH000232: Schema update complete
+22:31:23,020 INFO  [org.jboss.web] (ServerService Thread Pool -- 136) JBAS018210: Register web context: /WebAppEJB
+22:31:23,039 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 136) No Spring WebApplicationInitializer types detected on classpath
+22:31:23,221 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 136) Initializing Spring FrameworkServlet 'spring'
+22:31:23,221 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 136) FrameworkServlet 'spring': initialization started
+22:31:23,262 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 136) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Oct 20 22:31:23 ICT 2017]; root of context hierarchy
+22:31:23,333 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 136) Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+22:31:23,478 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 136) JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+22:31:23,479 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 136) JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+22:31:23,612 INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] (ServerService Thread Pool -- 136) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:31:23,624 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 136) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b9c5a0a: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+22:31:23,694 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listEmp] onto handler 'employeeController'
+22:31:23,695 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listEmp.*] onto handler 'employeeController'
+22:31:23,695 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listEmp/] onto handler 'employeeController'
+22:31:23,695 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newEmp] onto handler 'employeeController'
+22:31:23,695 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newEmp.*] onto handler 'employeeController'
+22:31:23,696 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newEmp/] onto handler 'employeeController'
+22:31:23,696 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/saveEmp] onto handler 'employeeController'
+22:31:23,696 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/saveEmp.*] onto handler 'employeeController'
+22:31:23,696 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/saveEmp/] onto handler 'employeeController'
+22:31:23,697 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editEmp] onto handler 'employeeController'
+22:31:23,697 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editEmp.*] onto handler 'employeeController'
+22:31:23,697 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editEmp/] onto handler 'employeeController'
+22:31:23,697 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deleteEmp] onto handler 'employeeController'
+22:31:23,697 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deleteEmp.*] onto handler 'employeeController'
+22:31:23,698 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deleteEmp/] onto handler 'employeeController'
+22:31:23,699 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listPhone] onto handler 'phoneController'
+22:31:23,699 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listPhone.*] onto handler 'phoneController'
+22:31:23,699 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/listPhone/] onto handler 'phoneController'
+22:31:23,699 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newPhone] onto handler 'phoneController'
+22:31:23,699 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newPhone.*] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/newPhone/] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editPhone] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editPhone.*] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/editPhone/] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deletePhone] onto handler 'phoneController'
+22:31:23,700 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deletePhone.*] onto handler 'phoneController'
+22:31:23,701 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/deletePhone/] onto handler 'phoneController'
+22:31:23,701 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/savePhone] onto handler 'phoneController'
+22:31:23,703 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/savePhone.*] onto handler 'phoneController'
+22:31:23,704 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 136) Mapped URL path [/savePhone/] onto handler 'phoneController'
+22:31:23,817 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 136) FrameworkServlet 'spring': initialization completed in 595 ms
+22:31:23,912 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015865: Replaced deployment "WebAppEJB.war" with deployment "WebAppEJB.war"
+23:13:23,546 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+23:13:23,582 INFO  [org.jboss.web] (ServerService Thread Pool -- 156) JBAS018224: Unregister web context: /WebAppEJB
+23:13:23,587 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8080
+23:13:23,588 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8080
+23:13:23,592 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 156) Destroying Spring FrameworkServlet 'spring'
+23:13:23,592 INFO  [org.apache.catalina.core] (MSC service thread 1-8) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+23:13:23,593 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 156) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Oct 20 22:31:23 ICT 2017]; root of context hierarchy
+23:13:23,601 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 157) JBAS011403: Stopping Persistence Unit Service 'HelloServer1.jar#EmployeeDatabase'
+23:13:23,612 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 156) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b9c5a0a: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+23:13:23,630 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment HelloServer1.jar (runtime-name: HelloServer1.jar) in 100ms
+23:13:23,674 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 156) JBAS011403: Stopping Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+23:13:23,693 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+23:13:23,741 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment WebAppEJB.war (runtime-name: WebAppEJB.war) in 220ms
+23:13:23,752 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 210ms
+23:13:24,987 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+23:13:26,380 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+23:13:26,510 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+23:13:26,520 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Admin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/d4/3zylg15d3hd3vmwb13ynbxbm0000gn/T/
+	java.library.path = /Users/Admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_144-b01
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_144
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.144-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0
+	jboss.host.name = apple-macintosh
+	jboss.modules.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apple-macintosh
+	jboss.qualified.host.name = apple-macintosh.connectify
+	jboss.server.base.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone
+	jboss.server.config.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration
+	jboss.server.data.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/data
+	jboss.server.deploy.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/data/content
+	jboss.server.log.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log
+	jboss.server.name = apple-macintosh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration/logging.properties
+	module.path = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules
+	org.jboss.boot.log.file = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.12.6
+	path.separator = :
+	program.name = JBossTools: Red Hat JBoss EAP 6.1+
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = TH
+	user.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/bin
+	user.home = /Users/Admin
+	user.language = en
+	user.name = Toey
+	user.timezone = Asia/Bangkok
+23:13:26,523 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: Red Hat JBoss EAP 6.1+ -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log/boot.log -Dlogging.configuration=file:/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration/logging.properties -Djboss.home.dir=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+23:13:28,469 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found HelloServer1.jar in deployment directory. To trigger deployment create a file called HelloServer1.jar.dodeploy
+23:13:28,471 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WebAppEJB.war in deployment directory. To trigger deployment create a file called WebAppEJB.war.dodeploy
+23:13:28,532 INFO  [org.xnio] (MSC service thread 1-6) XNIO Version 3.0.13.GA-redhat-1
+23:13:28,552 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+23:13:28,556 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+23:13:28,630 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 3.3.4.Final-redhat-1
+23:13:28,656 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+23:13:28,679 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+23:13:28,702 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+23:13:28,708 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+23:13:28,724 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+23:13:28,786 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+23:13:28,790 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+23:13:28,793 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+23:13:28,795 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+23:13:28,853 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+23:13:28,991 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+23:13:29,022 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+23:13:29,386 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8080
+23:13:29,394 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8080
+23:13:29,822 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+23:13:29,843 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/MySqlDS]
+23:13:29,935 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/deployments
+23:13:29,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "HelloServer1.jar" (runtime-name: "HelloServer1.jar")
+23:13:29,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "WebAppEJB.war" (runtime-name: "WebAppEJB.war")
+23:13:29,987 INFO  [org.jboss.as.remoting] (MSC service thread 1-8) JBAS017100: Listening on 127.0.0.1:4447
+23:13:29,987 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:9999
+23:13:30,478 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for EmployeeDatabase
+23:13:30,520 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+23:13:30,658 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:app/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:module/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:jboss/exported/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:global/HelloServer1/PhoneServiceBean
+	java:app/HelloServer1/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+23:13:30,660 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:app/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:jboss/exported/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:global/HelloServer1/EmployeeServiceBean
+	java:app/HelloServer1/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+23:13:30,664 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:app/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:module/SkillServiceBean!com.mfu.ejb.SkillService
+	java:jboss/exported/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:global/HelloServer1/SkillServiceBean
+	java:app/HelloServer1/SkillServiceBean
+	java:module/SkillServiceBean
+
+23:13:31,120 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011402: Starting Persistence Unit Service 'HelloServer1.jar#EmployeeDatabase'
+23:13:31,518 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 51) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+23:13:31,543 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 51) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+23:13:31,547 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000206: hibernate.properties not found
+23:13:31,551 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000021: Bytecode provider name : javassist
+23:13:31,620 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 51) HHH000204: Processing PersistenceUnitInfo [
+	name: EmployeeDatabase
+	...]
+23:13:32,269 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 51) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:13:32,456 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 51) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:13:33,440 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for EmployeeDatabase
+23:13:33,441 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 51) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+23:13:33,452 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 51) HHH000397: Using ASTQueryTranslatorFactory
+23:13:33,575 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 51) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+23:13:34,016 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:app/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:jboss/exported/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:global/WebAppEJB/EmployeeServiceBean
+	java:app/WebAppEJB/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+23:13:34,017 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:app/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:module/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:jboss/exported/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:global/WebAppEJB/PhoneServiceBean
+	java:app/WebAppEJB/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+23:13:34,018 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:app/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:module/SkillServiceBean!com.mfu.ejb.SkillService
+	java:jboss/exported/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:global/WebAppEJB/SkillServiceBean
+	java:app/WebAppEJB/SkillServiceBean
+	java:module/SkillServiceBean
+
+23:13:34,308 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 52) JBAS011402: Starting Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+23:13:34,309 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
+	name: EmployeeDatabase
+	...]
+23:13:34,351 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 52) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:13:34,357 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:13:34,385 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 52) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+23:13:34,387 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
+23:13:34,680 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000228: Running hbm2ddl schema update
+23:13:34,681 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000102: Fetching database metadata
+23:13:34,682 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000228: Running hbm2ddl schema update
+23:13:34,683 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000102: Fetching database metadata
+23:13:34,696 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000396: Updating schema
+23:13:34,696 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000396: Updating schema
+23:13:34,728 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Address
+23:13:34,730 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.Address
+23:13:34,730 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [country, city, street, employee_employeeid, addressid]
+23:13:34,731 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [country, city, street, employee_employeeid, addressid]
+23:13:34,731 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_9uetjkgminw7eqytp90q27uli]
+23:13:34,731 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: [fk_9uetjkgminw7eqytp90q27uli]
+23:13:34,731 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_9uetjkgminw7eqytp90q27uli, primary]
+23:13:34,731 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [fk_9uetjkgminw7eqytp90q27uli, primary]
+23:13:34,739 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Customer
+23:13:34,739 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.Customer
+23:13:34,739 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [custfirstname, password, custlastname, phone, custid, custemail, username]
+23:13:34,740 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:13:34,740 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [custfirstname, password, custlastname, phone, custid, custemail, username]
+23:13:34,740 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary]
+23:13:34,740 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: []
+23:13:34,741 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [primary]
+23:13:34,748 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.CustomerOrder
+23:13:34,749 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [date, customer_custid, quantity, price, custordid, productname]
+23:13:34,749 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: [fk_nk9d6tch7s69ym57mnqqinky1]
+23:13:34,750 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [fk_nk9d6tch7s69ym57mnqqinky1, primary]
+23:13:34,750 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.CustomerOrder
+23:13:34,750 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [date, customer_custid, quantity, price, custordid, productname]
+23:13:34,751 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_nk9d6tch7s69ym57mnqqinky1]
+23:13:34,751 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_nk9d6tch7s69ym57mnqqinky1, primary]
+23:13:34,756 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.Employee
+23:13:34,757 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Employee
+23:13:34,757 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [firstname, employeeid, lastname]
+23:13:34,757 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [firstname, employeeid, lastname]
+23:13:34,757 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:13:34,758 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary]
+23:13:34,758 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: []
+23:13:34,758 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [primary]
+23:13:34,765 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.OrderItem
+23:13:34,765 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [quantity, productid, price, productname, customerorder_custordid]
+23:13:34,766 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: [fk_o642o3x3yvag6s9favbimf4o8]
+23:13:34,766 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [primary, fk_o642o3x3yvag6s9favbimf4o8]
+23:13:34,767 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.OrderItem
+23:13:34,767 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [quantity, productid, price, productname, customerorder_custordid]
+23:13:34,767 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_o642o3x3yvag6s9favbimf4o8]
+23:13:34,767 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary, fk_o642o3x3yvag6s9favbimf4o8]
+23:13:34,773 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.Phone
+23:13:34,773 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [number, phoneid, employee_employeeid, label]
+23:13:34,773 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: [fk_gv8ge3ht6n61q0qvh5hmqycxe]
+23:13:34,774 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [fk_gv8ge3ht6n61q0qvh5hmqycxe, primary]
+23:13:34,774 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Phone
+23:13:34,774 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [number, phoneid, employee_employeeid, label]
+23:13:34,774 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_gv8ge3ht6n61q0qvh5hmqycxe]
+23:13:34,774 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_gv8ge3ht6n61q0qvh5hmqycxe, primary]
+23:13:34,783 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Skill
+23:13:34,783 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [skillid, level, skill, employee_employeeid]
+23:13:34,783 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_q1w0r70mermc2t1fm2t5pweof]
+23:13:34,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_q1w0r70mermc2t1fm2t5pweof, primary]
+23:13:34,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.Skill
+23:13:34,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [skillid, level, skill, employee_employeeid]
+23:13:34,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: [fk_q1w0r70mermc2t1fm2t5pweof]
+23:13:34,784 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: [fk_q1w0r70mermc2t1fm2t5pweof, primary]
+23:13:34,797 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.hibernate_sequence
+23:13:34,797 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [next_val]
+23:13:34,797 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:13:34,797 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: []
+23:13:34,798 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000232: Schema update complete
+23:13:34,798 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000261: Table found: epst.hibernate_sequence
+23:13:34,800 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000037: Columns: [next_val]
+23:13:34,800 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000108: Foreign keys: []
+23:13:34,801 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 51) HHH000126: Indexes: []
+23:13:34,801 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000232: Schema update complete
+23:13:34,928 INFO  [org.jboss.web] (ServerService Thread Pool -- 51) JBAS018210: Register web context: /WebAppEJB
+23:13:34,954 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 51) No Spring WebApplicationInitializer types detected on classpath
+23:13:35,211 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 51) Initializing Spring FrameworkServlet 'spring'
+23:13:35,212 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 51) FrameworkServlet 'spring': initialization started
+23:13:35,239 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 51) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Oct 20 23:13:35 ICT 2017]; root of context hierarchy
+23:13:35,302 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 51) Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+23:13:35,671 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 51) JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+23:13:35,674 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 51) JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:13:35,831 INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] (ServerService Thread Pool -- 51) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:13:35,842 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 51) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51cf8b50: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+23:13:35,936 INFO  [org.jboss.ejb.client] (ServerService Thread Pool -- 51) JBoss EJB Client version 1.0.30.Final-redhat-1
+23:13:36,019 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listEmp] onto handler 'employeeController'
+23:13:36,019 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listEmp.*] onto handler 'employeeController'
+23:13:36,019 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listEmp/] onto handler 'employeeController'
+23:13:36,020 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newEmp] onto handler 'employeeController'
+23:13:36,020 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newEmp.*] onto handler 'employeeController'
+23:13:36,020 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newEmp/] onto handler 'employeeController'
+23:13:36,020 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/saveEmp] onto handler 'employeeController'
+23:13:36,020 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/saveEmp.*] onto handler 'employeeController'
+23:13:36,021 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/saveEmp/] onto handler 'employeeController'
+23:13:36,021 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editEmp] onto handler 'employeeController'
+23:13:36,021 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editEmp.*] onto handler 'employeeController'
+23:13:36,021 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editEmp/] onto handler 'employeeController'
+23:13:36,021 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deleteEmp] onto handler 'employeeController'
+23:13:36,022 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deleteEmp.*] onto handler 'employeeController'
+23:13:36,022 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deleteEmp/] onto handler 'employeeController'
+23:13:36,022 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listPhone] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listPhone.*] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/listPhone/] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newPhone] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newPhone.*] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/newPhone/] onto handler 'phoneController'
+23:13:36,023 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editPhone] onto handler 'phoneController'
+23:13:36,024 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editPhone.*] onto handler 'phoneController'
+23:13:36,024 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/editPhone/] onto handler 'phoneController'
+23:13:36,024 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deletePhone] onto handler 'phoneController'
+23:13:36,024 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deletePhone.*] onto handler 'phoneController'
+23:13:36,025 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/deletePhone/] onto handler 'phoneController'
+23:13:36,025 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/savePhone] onto handler 'phoneController'
+23:13:36,026 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/savePhone.*] onto handler 'phoneController'
+23:13:36,026 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 51) Mapped URL path [/savePhone/] onto handler 'phoneController'
+23:13:36,180 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 51) FrameworkServlet 'spring': initialization completed in 968 ms
+23:13:36,278 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "WebAppEJB.war" (runtime-name : "WebAppEJB.war")
+23:13:36,278 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "HelloServer1.jar" (runtime-name : "HelloServer1.jar")
+23:13:36,300 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+23:13:36,301 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+23:13:36,303 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 12083ms - Started 652 of 690 services (62 services are lazy, passive or on-demand)
+23:14:23,724 WARN  [org.springframework.web.servlet.PageNotFound] (http-localhost/127.0.0.1:8080-1) No mapping found for HTTP request with URI [/WebAppEJB/listSkill.do] in DispatcherServlet with name 'spring'
+23:15:57,098 WARN  [org.springframework.web.servlet.PageNotFound] (http-localhost/127.0.0.1:8080-1) No mapping found for HTTP request with URI [/WebAppEJB/skillForm.do] in DispatcherServlet with name 'spring'
+23:22:26,034 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8080
+23:22:26,036 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8080
+23:22:26,041 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+23:22:26,061 INFO  [org.apache.catalina.core] (MSC service thread 1-4) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+23:22:26,060 INFO  [org.jboss.web] (ServerService Thread Pool -- 82) JBAS018224: Unregister web context: /WebAppEJB
+23:22:26,063 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 82) Destroying Spring FrameworkServlet 'spring'
+23:22:26,064 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 82) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Oct 20 23:13:35 ICT 2017]; root of context hierarchy
+23:22:26,068 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 82) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51cf8b50: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+23:22:26,078 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) JBAS011403: Stopping Persistence Unit Service 'HelloServer1.jar#EmployeeDatabase'
+23:22:26,115 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment HelloServer1.jar (runtime-name: HelloServer1.jar) in 125ms
+23:22:26,242 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) JBAS011403: Stopping Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+23:22:26,251 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+23:22:26,334 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment WebAppEJB.war (runtime-name: WebAppEJB.war) in 346ms
+23:22:26,352 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 358ms
+23:22:27,545 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+23:22:28,939 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+23:22:29,104 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+23:22:29,114 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Admin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/d4/3zylg15d3hd3vmwb13ynbxbm0000gn/T/
+	java.library.path = /Users/Admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_144-b01
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_144
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.144-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0
+	jboss.host.name = apple-macintosh
+	jboss.modules.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apple-macintosh
+	jboss.qualified.host.name = apple-macintosh.connectify
+	jboss.server.base.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone
+	jboss.server.config.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration
+	jboss.server.data.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/data
+	jboss.server.deploy.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/data/content
+	jboss.server.log.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log
+	jboss.server.name = apple-macintosh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration/logging.properties
+	module.path = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules
+	org.jboss.boot.log.file = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.12.6
+	path.separator = :
+	program.name = JBossTools: Red Hat JBoss EAP 6.1+
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/modules -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = TH
+	user.dir = /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/bin
+	user.home = /Users/Admin
+	user.language = en
+	user.name = Toey
+	user.timezone = Asia/Bangkok
+23:22:29,116 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: Red Hat JBoss EAP 6.1+ -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/log/boot.log -Dlogging.configuration=file:/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/configuration/logging.properties -Djboss.home.dir=/Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+23:22:30,922 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found HelloServer1.jar in deployment directory. To trigger deployment create a file called HelloServer1.jar.dodeploy
+23:22:30,924 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found WebAppEJB.war in deployment directory. To trigger deployment create a file called WebAppEJB.war.dodeploy
+23:22:30,981 INFO  [org.xnio] (MSC service thread 1-3) XNIO Version 3.0.13.GA-redhat-1
+23:22:30,993 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+23:22:31,001 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+23:22:31,083 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 3.3.4.Final-redhat-1
+23:22:31,116 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+23:22:31,175 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+23:22:31,218 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+23:22:31,230 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+23:22:31,242 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+23:22:31,268 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+23:22:31,272 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+23:22:31,291 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+23:22:31,376 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
+23:22:31,380 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+23:22:31,384 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+23:22:31,427 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+23:22:31,887 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8080
+23:22:31,918 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8080
+23:22:32,179 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+23:22:32,211 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory /Users/Admin/Documents/Enterprise Software/Program/jboss-eap-6.4.0/standalone/deployments
+23:22:32,224 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "HelloServer1.jar" (runtime-name: "HelloServer1.jar")
+23:22:32,224 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "WebAppEJB.war" (runtime-name: "WebAppEJB.war")
+23:22:32,270 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/MySqlDS]
+23:22:32,291 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:9999
+23:22:32,294 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:4447
+23:22:32,570 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for EmployeeDatabase
+23:22:32,798 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+23:22:32,864 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:app/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:module/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:jboss/exported/HelloServer1/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:global/HelloServer1/PhoneServiceBean
+	java:app/HelloServer1/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+23:22:32,865 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:app/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:jboss/exported/HelloServer1/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:global/HelloServer1/EmployeeServiceBean
+	java:app/HelloServer1/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+23:22:32,866 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "HelloServer1.jar" are as follows:
+
+	java:global/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:app/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:module/SkillServiceBean!com.mfu.ejb.SkillService
+	java:jboss/exported/HelloServer1/SkillServiceBean!com.mfu.ejb.SkillService
+	java:global/HelloServer1/SkillServiceBean
+	java:app/HelloServer1/SkillServiceBean
+	java:module/SkillServiceBean
+
+23:22:33,293 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011402: Starting Persistence Unit Service 'HelloServer1.jar#EmployeeDatabase'
+23:22:33,648 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+23:22:33,673 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+23:22:33,685 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+23:22:33,688 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+23:22:33,766 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: EmployeeDatabase
+	...]
+23:22:34,318 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 50) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:22:34,433 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:22:35,276 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 50) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+23:22:35,286 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+23:22:35,299 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) JBAS011401: Read persistence.xml for EmployeeDatabase
+23:22:35,426 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 50) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+23:22:35,814 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:app/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:jboss/exported/WebAppEJB/EmployeeServiceBean!com.mfu.ejb.EmployeeService
+	java:global/WebAppEJB/EmployeeServiceBean
+	java:app/WebAppEJB/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+23:22:35,814 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:app/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:module/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:jboss/exported/WebAppEJB/PhoneServiceBean!com.mfu.ejb.PhoneService
+	java:global/WebAppEJB/PhoneServiceBean
+	java:app/WebAppEJB/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+23:22:35,815 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "WebAppEJB.war" are as follows:
+
+	java:global/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:app/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:module/SkillServiceBean!com.mfu.ejb.SkillService
+	java:jboss/exported/WebAppEJB/SkillServiceBean!com.mfu.ejb.SkillService
+	java:global/WebAppEJB/SkillServiceBean
+	java:app/WebAppEJB/SkillServiceBean
+	java:module/SkillServiceBean
+
+23:22:36,072 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 52) JBAS011402: Starting Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+23:22:36,077 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
+	name: EmployeeDatabase
+	...]
+23:22:36,102 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 52) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:22:36,111 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:22:36,144 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 52) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+23:22:36,145 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
+23:22:36,319 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000228: Running hbm2ddl schema update
+23:22:36,319 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000228: Running hbm2ddl schema update
+23:22:36,320 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000102: Fetching database metadata
+23:22:36,321 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000102: Fetching database metadata
+23:22:36,344 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000396: Updating schema
+23:22:36,344 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000396: Updating schema
+23:22:36,374 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.Address
+23:22:36,374 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Address
+23:22:36,375 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [country, city, street, employee_employeeid, addressid]
+23:22:36,375 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [country, city, street, employee_employeeid, addressid]
+23:22:36,375 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_9uetjkgminw7eqytp90q27uli]
+23:22:36,376 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_9uetjkgminw7eqytp90q27uli, primary]
+23:22:36,376 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_9uetjkgminw7eqytp90q27uli]
+23:22:36,376 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_9uetjkgminw7eqytp90q27uli, primary]
+23:22:36,384 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.Customer
+23:22:36,384 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [custfirstname, password, custlastname, phone, custid, custemail, username]
+23:22:36,384 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+23:22:36,385 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+23:22:36,388 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Customer
+23:22:36,389 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [custfirstname, password, custlastname, phone, custid, custemail, username]
+23:22:36,389 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:22:36,389 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary]
+23:22:36,393 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.CustomerOrder
+23:22:36,393 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [date, customer_custid, quantity, price, custordid, productname]
+23:22:36,393 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_nk9d6tch7s69ym57mnqqinky1]
+23:22:36,394 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_nk9d6tch7s69ym57mnqqinky1, primary]
+23:22:36,398 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.CustomerOrder
+23:22:36,399 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [date, customer_custid, quantity, price, custordid, productname]
+23:22:36,399 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_nk9d6tch7s69ym57mnqqinky1]
+23:22:36,399 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_nk9d6tch7s69ym57mnqqinky1, primary]
+23:22:36,400 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.Employee
+23:22:36,400 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [firstname, employeeid, lastname]
+23:22:36,401 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+23:22:36,401 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary]
+23:22:36,412 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Employee
+23:22:36,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [firstname, employeeid, lastname]
+23:22:36,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:22:36,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary]
+23:22:36,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.OrderItem
+23:22:36,414 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [quantity, productid, price, productname, customerorder_custordid]
+23:22:36,414 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_o642o3x3yvag6s9favbimf4o8]
+23:22:36,414 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [primary, fk_o642o3x3yvag6s9favbimf4o8]
+23:22:36,420 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.OrderItem
+23:22:36,421 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [quantity, productid, price, productname, customerorder_custordid]
+23:22:36,421 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_o642o3x3yvag6s9favbimf4o8]
+23:22:36,421 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [primary, fk_o642o3x3yvag6s9favbimf4o8]
+23:22:36,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.Phone
+23:22:36,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [number, phoneid, employee_employeeid, label]
+23:22:36,423 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_gv8ge3ht6n61q0qvh5hmqycxe]
+23:22:36,423 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_gv8ge3ht6n61q0qvh5hmqycxe, primary]
+23:22:36,428 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Phone
+23:22:36,429 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [number, phoneid, employee_employeeid, label]
+23:22:36,429 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_gv8ge3ht6n61q0qvh5hmqycxe]
+23:22:36,430 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_gv8ge3ht6n61q0qvh5hmqycxe, primary]
+23:22:36,430 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.Skill
+23:22:36,430 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [skillid, level, skill, employee_employeeid]
+23:22:36,431 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: [fk_q1w0r70mermc2t1fm2t5pweof]
+23:22:36,431 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: [fk_q1w0r70mermc2t1fm2t5pweof, primary]
+23:22:36,438 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.Skill
+23:22:36,438 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [skillid, level, skill, employee_employeeid]
+23:22:36,438 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: [fk_q1w0r70mermc2t1fm2t5pweof]
+23:22:36,439 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: [fk_q1w0r70mermc2t1fm2t5pweof, primary]
+23:22:36,441 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000261: Table found: epst.hibernate_sequence
+23:22:36,441 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000037: Columns: [next_val]
+23:22:36,441 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000108: Foreign keys: []
+23:22:36,442 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 50) HHH000126: Indexes: []
+23:22:36,442 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000232: Schema update complete
+23:22:36,446 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000261: Table found: epst.hibernate_sequence
+23:22:36,447 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000037: Columns: [next_val]
+23:22:36,447 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000108: Foreign keys: []
+23:22:36,448 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 52) HHH000126: Indexes: []
+23:22:36,448 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000232: Schema update complete
+23:22:36,554 INFO  [org.jboss.web] (ServerService Thread Pool -- 53) JBAS018210: Register web context: /WebAppEJB
+23:22:36,575 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 53) No Spring WebApplicationInitializer types detected on classpath
+23:22:36,829 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 53) Initializing Spring FrameworkServlet 'spring'
+23:22:36,830 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 53) FrameworkServlet 'spring': initialization started
+23:22:36,853 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 53) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Oct 20 23:22:36 ICT 2017]; root of context hierarchy
+23:22:36,909 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 53) Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+23:22:37,217 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 53) JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+23:22:37,219 INFO  [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] (ServerService Thread Pool -- 53) JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:22:37,351 INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] (ServerService Thread Pool -- 53) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:22:37,360 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 53) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ef6eb9d: defining beans [employeeController,phoneController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+23:22:37,406 INFO  [org.jboss.ejb.client] (ServerService Thread Pool -- 53) JBoss EJB Client version 1.0.30.Final-redhat-1
+23:22:37,482 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listEmp] onto handler 'employeeController'
+23:22:37,483 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listEmp.*] onto handler 'employeeController'
+23:22:37,483 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listEmp/] onto handler 'employeeController'
+23:22:37,483 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newEmp] onto handler 'employeeController'
+23:22:37,484 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newEmp.*] onto handler 'employeeController'
+23:22:37,484 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newEmp/] onto handler 'employeeController'
+23:22:37,484 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/saveEmp] onto handler 'employeeController'
+23:22:37,484 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/saveEmp.*] onto handler 'employeeController'
+23:22:37,484 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/saveEmp/] onto handler 'employeeController'
+23:22:37,485 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editEmp] onto handler 'employeeController'
+23:22:37,485 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editEmp.*] onto handler 'employeeController'
+23:22:37,485 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editEmp/] onto handler 'employeeController'
+23:22:37,485 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deleteEmp] onto handler 'employeeController'
+23:22:37,485 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deleteEmp.*] onto handler 'employeeController'
+23:22:37,486 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deleteEmp/] onto handler 'employeeController'
+23:22:37,488 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listPhone] onto handler 'phoneController'
+23:22:37,488 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listPhone.*] onto handler 'phoneController'
+23:22:37,488 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/listPhone/] onto handler 'phoneController'
+23:22:37,488 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newPhone] onto handler 'phoneController'
+23:22:37,488 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newPhone.*] onto handler 'phoneController'
+23:22:37,489 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/newPhone/] onto handler 'phoneController'
+23:22:37,489 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editPhone] onto handler 'phoneController'
+23:22:37,489 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editPhone.*] onto handler 'phoneController'
+23:22:37,489 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/editPhone/] onto handler 'phoneController'
+23:22:37,489 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deletePhone] onto handler 'phoneController'
+23:22:37,490 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deletePhone.*] onto handler 'phoneController'
+23:22:37,490 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/deletePhone/] onto handler 'phoneController'
+23:22:37,490 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/savePhone] onto handler 'phoneController'
+23:22:37,490 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/savePhone.*] onto handler 'phoneController'
+23:22:37,490 INFO  [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] (ServerService Thread Pool -- 53) Mapped URL path [/savePhone/] onto handler 'phoneController'
+23:22:37,639 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 53) FrameworkServlet 'spring': initialization completed in 809 ms
+23:22:37,732 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "WebAppEJB.war" (runtime-name : "WebAppEJB.war")
+23:22:37,733 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "HelloServer1.jar" (runtime-name : "HelloServer1.jar")
+23:22:37,753 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+23:22:37,754 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+23:22:37,755 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 11013ms - Started 652 of 690 services (62 services are lazy, passive or on-demand)
+23:22:57,539 ERROR [org.springframework.web.servlet.tags.form.FormTag] (http-localhost/127.0.0.1:8080-1) No WebApplicationContext found: no ContextLoaderListener registered?: java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener registered?
+	at org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(WebApplicationContextUtils.java:86) [org.springframework.web-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContextUtils.getWebApplicationContext(RequestContextUtils.java:85) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContext.initContext(RequestContext.java:207) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.initContext(JspAwareRequestContext.java:74) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.<init>(JspAwareRequestContext.java:48) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:76) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.apache.jsp.skillForm_jsp._jspx_meth_form_005fform_005f0(skillForm_jsp.java:104)
+	at org.apache.jsp.skillForm_jsp._jspService(skillForm_jsp.java:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:69) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:365) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:309) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:242) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_144]
+
+23:22:57,563 ERROR [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB].[jsp]] (http-localhost/127.0.0.1:8080-1) JBWEB000236: Servlet.service() for servlet jsp threw exception: java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener registered?
+	at org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(WebApplicationContextUtils.java:86) [org.springframework.web-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContextUtils.getWebApplicationContext(RequestContextUtils.java:85) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContext.initContext(RequestContext.java:207) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.initContext(JspAwareRequestContext.java:74) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.<init>(JspAwareRequestContext.java:48) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:76) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.apache.jsp.skillForm_jsp._jspx_meth_form_005fform_005f0(skillForm_jsp.java:104)
+	at org.apache.jsp.skillForm_jsp._jspService(skillForm_jsp.java:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:69) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:365) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:309) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:242) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_144]
+
+23:23:13,923 WARN  [org.springframework.web.servlet.PageNotFound] (http-localhost/127.0.0.1:8080-1) No mapping found for HTTP request with URI [/WebAppEJB/skillForm.do] in DispatcherServlet with name 'spring'
+23:24:18,570 WARN  [org.springframework.web.servlet.PageNotFound] (http-localhost/127.0.0.1:8080-1) No mapping found for HTTP request with URI [/WebAppEJB/newSkill.do] in DispatcherServlet with name 'spring'
+23:29:13,356 ERROR [org.springframework.web.servlet.tags.form.FormTag] (http-localhost/127.0.0.1:8080-1) No WebApplicationContext found: no ContextLoaderListener registered?: java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener registered?
+	at org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(WebApplicationContextUtils.java:86) [org.springframework.web-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContextUtils.getWebApplicationContext(RequestContextUtils.java:85) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContext.initContext(RequestContext.java:207) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.initContext(JspAwareRequestContext.java:74) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.<init>(JspAwareRequestContext.java:48) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:76) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.apache.jsp.skillForm_jsp._jspx_meth_form_005fform_005f0(skillForm_jsp.java:104)
+	at org.apache.jsp.skillForm_jsp._jspService(skillForm_jsp.java:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:69) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:365) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:309) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:242) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_144]
+
+23:29:13,362 ERROR [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB].[jsp]] (http-localhost/127.0.0.1:8080-1) JBWEB000236: Servlet.service() for servlet jsp threw exception: java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener registered?
+	at org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(WebApplicationContextUtils.java:86) [org.springframework.web-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContextUtils.getWebApplicationContext(RequestContextUtils.java:85) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.RequestContext.initContext(RequestContext.java:207) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.initContext(JspAwareRequestContext.java:74) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.support.JspAwareRequestContext.<init>(JspAwareRequestContext.java:48) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:76) [org.springframework.web.servlet-3.1.0.RC2.jar:3.1.0.RC2]
+	at org.apache.jsp.skillForm_jsp._jspx_meth_form_005fform_005f0(skillForm_jsp.java:104)
+	at org.apache.jsp.skillForm_jsp._jspService(skillForm_jsp.java:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:69) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:365) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:309) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:242) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-2.jar:1.0.2.Final-redhat-2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_144]
+

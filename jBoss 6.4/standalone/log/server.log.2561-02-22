@@ -1,0 +1,1811 @@
+02:46:32,385 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+02:46:32,437 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+02:46:32,318 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+02:46:32,367 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+02:46:32,321 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+02:46:32,855 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+02:46:32,968 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+02:46:33,026 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+02:46:33,787 INFO  [org.jboss.as.naming] (MSC service thread 1-14) JBAS011802: Starting Naming Service
+02:46:33,786 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+02:46:33,788 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+02:46:34,142 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+02:46:34,311 INFO  [org.jboss.remoting] (MSC service thread 1-12) JBoss Remoting version 3.3.4.Final-redhat-1
+02:46:34,855 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-3) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8181
+02:46:34,872 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-3) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8181
+02:46:35,480 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+02:46:35,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/MySqlDS]
+02:46:36,880 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (JCA PoolFiller) IJ000610: Unable to fill pool: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.fillToMin(SemaphoreArrayListManagedConnectionPool.java:775) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at org.jboss.jca.core.connectionmanager.pool.mcp.PoolFiller.run(PoolFiller.java:97) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 5 more
+
+02:46:38,113 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\deployments
+02:46:38,167 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:9999
+02:46:38,167 INFO  [org.jboss.as.remoting] (MSC service thread 1-13) JBAS017100: Listening on 127.0.0.1:4447
+02:46:38,300 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "SeniorEJBHostel" (runtime-name: "SeniorEJBHostel")
+02:46:38,300 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "SeniorEJBHostel.jar" (runtime-name: "SeniorEJBHostel.jar")
+02:46:39,569 INFO  [org.jboss.ws.common.management] (MSC service thread 1-16) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+02:46:39,727 INFO  [org.jboss.as.jpa] (MSC service thread 1-15) JBAS011401: Read persistence.xml for HostelDatabase
+02:46:39,926 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-9) MSC000001: Failed to start service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment "SeniorEJBHostel"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [jboss-as-server-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1980) [jboss-msc-1.1.5.Final-redhat-1.jar:1.1.5.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1913) [jboss-msc-1.1.5.Final-redhat-1.jar:1.1.5.Final-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module "deployment.SeniorEJBHostel:main" from Service Module Loader]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:217)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [jboss-as-server-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module "deployment.SeniorEJBHostel:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:215)
+	... 7 more
+
+02:46:40,074 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named BookTripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:app/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:module/BookTripServiceBean!com.mfu.service.BookTripService
+	java:jboss/exported/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:global/SeniorEJBHostel/BookTripServiceBean
+	java:app/SeniorEJBHostel/BookTripServiceBean
+	java:module/BookTripServiceBean
+
+02:46:40,074 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named BookRoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:app/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:module/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:jboss/exported/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:global/SeniorEJBHostel/BookRoomServiceBean
+	java:app/SeniorEJBHostel/BookRoomServiceBean
+	java:module/BookRoomServiceBean
+
+02:46:40,075 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named ReservationServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:app/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:module/ReservationServiceBean!com.mfu.service.ReservationService
+	java:jboss/exported/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:global/SeniorEJBHostel/ReservationServiceBean
+	java:app/SeniorEJBHostel/ReservationServiceBean
+	java:module/ReservationServiceBean
+
+02:46:40,075 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named GuestServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:app/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:module/GuestServiceBean!com.mfu.service.GuestService
+	java:jboss/exported/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:global/SeniorEJBHostel/GuestServiceBean
+	java:app/SeniorEJBHostel/GuestServiceBean
+	java:module/GuestServiceBean
+
+02:46:40,075 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named TripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:app/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:module/TripServiceBean!com.mfu.service.TripService
+	java:jboss/exported/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:global/SeniorEJBHostel/TripServiceBean
+	java:app/SeniorEJBHostel/TripServiceBean
+	java:module/TripServiceBean
+
+02:46:40,075 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named AdnimServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:app/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:module/AdnimServiceBean!com.mfu.service.AdminService
+	java:jboss/exported/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:global/SeniorEJBHostel/AdnimServiceBean
+	java:app/SeniorEJBHostel/AdnimServiceBean
+	java:module/AdnimServiceBean
+
+02:46:40,076 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named BillServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:app/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:module/BillServiceBean!com.mfu.service.BillService
+	java:jboss/exported/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:global/SeniorEJBHostel/BillServiceBean
+	java:app/SeniorEJBHostel/BillServiceBean
+	java:module/BillServiceBean
+
+02:46:40,076 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named OrderProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:app/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:module/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:jboss/exported/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:global/SeniorEJBHostel/OrderProductServiceBean
+	java:app/SeniorEJBHostel/OrderProductServiceBean
+	java:module/OrderProductServiceBean
+
+02:46:40,076 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named BookSpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:app/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:module/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:jboss/exported/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:global/SeniorEJBHostel/BookSpaServiceBean
+	java:app/SeniorEJBHostel/BookSpaServiceBean
+	java:module/BookSpaServiceBean
+
+02:46:40,077 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named SpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:app/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:module/SpaServiceBean!com.mfu.service.SpaService
+	java:jboss/exported/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:global/SeniorEJBHostel/SpaServiceBean
+	java:app/SeniorEJBHostel/SpaServiceBean
+	java:module/SpaServiceBean
+
+02:46:40,077 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named RoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:app/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:module/RoomServiceBean!com.mfu.service.RoomService
+	java:jboss/exported/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:global/SeniorEJBHostel/RoomServiceBean
+	java:app/SeniorEJBHostel/RoomServiceBean
+	java:module/RoomServiceBean
+
+02:46:40,078 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named PromotionServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:app/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:module/PromotionServiceBean!com.mfu.service.PromotionService
+	java:jboss/exported/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:global/SeniorEJBHostel/PromotionServiceBean
+	java:app/SeniorEJBHostel/PromotionServiceBean
+	java:module/PromotionServiceBean
+
+02:46:40,078 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named MemberServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:app/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:module/MemberServiceBean!com.mfu.service.MemberService
+	java:jboss/exported/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:global/SeniorEJBHostel/MemberServiceBean
+	java:app/SeniorEJBHostel/MemberServiceBean
+	java:module/MemberServiceBean
+
+02:46:40,078 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named ProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:app/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:module/ProductServiceBean!com.mfu.service.ProductService
+	java:jboss/exported/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:global/SeniorEJBHostel/ProductServiceBean
+	java:app/SeniorEJBHostel/ProductServiceBean
+	java:module/ProductServiceBean
+
+02:46:41,780 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011402: Starting Persistence Unit Service 'SeniorEJBHostel.jar#HostelDatabase'
+02:46:43,368 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 51) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+02:46:43,381 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 51) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+02:46:43,388 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000206: hibernate.properties not found
+02:46:43,393 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000021: Bytecode provider name : javassist
+02:46:43,432 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 51) HHH000204: Processing PersistenceUnitInfo [
+	name: HostelDatabase
+	...]
+02:46:43,952 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 51) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+02:46:43,979 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 51) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:242) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:117) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:85) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:184) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:156) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1827) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1785) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 28 more
+
+02:46:43,983 WARN  [org.hibernate.engine.jdbc.internal.JdbcServicesImpl] (ServerService Thread Pool -- 51) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+02:46:43,995 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 51) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+02:46:44,009 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] (ServerService Thread Pool -- 51) HHH000422: Disabling contextual LOB creation as connection was null
+02:46:44,823 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 51) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+02:46:44,826 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 51) HHH000397: Using ASTQueryTranslatorFactory
+02:46:44,976 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 51) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+02:46:46,011 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000228: Running hbm2ddl schema update
+02:46:46,011 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000102: Fetching database metadata
+02:46:46,013 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 51) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+02:46:46,017 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000319: Could not get database metadata: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+02:46:46,020 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000299: Could not complete schema update: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+02:46:46,081 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014612: Operation ("deploy") failed - address: ([("deployment" => "SeniorEJBHostel")]) - failure description: {"JBAS014671: Failed services" => {"jboss.deployment.unit.SeniorEJBHostel.POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment \"SeniorEJBHostel\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module \"deployment.SeniorEJBHostel:main\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module \"deployment.SeniorEJBHostel:main\" from Service Module Loader]"}}
+02:46:46,156 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorEJBHostel.jar" (runtime-name : "SeniorEJBHostel.jar")
+02:46:46,156 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorEJBHostel" (runtime-name : "SeniorEJBHostel")
+02:46:46,157 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment "SeniorEJBHostel"
+
+02:46:46,382 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+02:46:46,383 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+02:46:46,383 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started (with errors) in 26826ms - Started 482 of 521 services (1 services failed or missing dependencies, 61 services are lazy, passive or on-demand)
+02:46:46,510 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-11) JBAS015877: Stopped deployment SeniorEJBHostel (runtime-name: SeniorEJBHostel) in 3ms
+02:46:46,986 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015858: Undeployed "SeniorEJBHostel" (runtime-name: "SeniorEJBHostel")
+02:46:46,986 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE
+
+02:46:51,344 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found SeniorWebHostel.war in deployment directory. To trigger deployment create a file called SeniorWebHostel.war.dodeploy
+02:46:51,345 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015010: The deployment scanner found a directory named META-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\deployments directory, which is a user error. The META-INF directory will not be scanned for deployments, but it is possible that the scanner mayfind other files from the unzipped archive and attempt to deploy them, leading to errors.
+02:49:04,716 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+02:49:04,717 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-14) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8181
+02:49:04,720 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-14) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8181
+02:49:04,742 INFO  [org.apache.catalina.core] (MSC service thread 1-10) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+02:49:04,755 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) JBAS011403: Stopping Persistence Unit Service 'SeniorEJBHostel.jar#HostelDatabase'
+02:49:04,788 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-13) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+02:49:04,852 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015877: Stopped deployment SeniorEJBHostel.jar (runtime-name: SeniorEJBHostel.jar) in 160ms
+02:49:04,858 INFO  [org.jboss.as] (MSC service thread 1-9) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 152ms
+20:12:33,770 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+20:12:34,579 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+20:12:34,632 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+20:12:34,670 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = MS874
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\jboss-modules.jar;C:\Program Files\Java\jre1.8.0_131\lib\resources.jar;C:\Program Files\Java\jre1.8.0_131\lib\rt.jar;C:\Program Files\Java\jre1.8.0_131\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_131\lib\jce.jar;C:\Program Files\Java\jre1.8.0_131\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_131\lib\jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_131\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_131\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_131
+	java.io.tmpdir = C:\Users\Auey\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\Auey\AppData\Local\Microsoft\WindowsApps;C:\Users\Auey\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\Auey\AppData\Local\GitHubDesktop\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4
+	jboss.host.name = desktop-dnud4lm
+	jboss.modules.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = desktop-dnud4lm
+	jboss.qualified.host.name = desktop-dnud4lm
+	jboss.server.base.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone
+	jboss.server.config.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\configuration
+	jboss.server.data.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\data
+	jboss.server.deploy.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\data\content
+	jboss.server.log.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\log
+	jboss.server.name = desktop-dnud4lm
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\configuration\logging.properties
+	module.path = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\modules
+	org.jboss.boot.log.file = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: Red Hat JBoss EAP 6.1+
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_131\lib\resources.jar;C:\Program Files\Java\jre1.8.0_131\lib\rt.jar;C:\Program Files\Java\jre1.8.0_131\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_131\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_131\lib\jce.jar;C:\Program Files\Java\jre1.8.0_131\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_131\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_131\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_131\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\modules -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = MS874
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = TH
+	user.dir = C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\bin
+	user.home = C:\Users\Auey
+	user.language = en
+	user.language.format = th
+	user.name = Auey
+	user.script = 
+	user.timezone = Asia/Bangkok
+	user.variant = 
+20:12:34,671 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: Red Hat JBoss EAP 6.1+ -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=MS874 
+20:12:38,660 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment SeniorEJBHostel
+20:12:38,897 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found SeniorWebHostel.war in deployment directory. To trigger deployment create a file called SeniorWebHostel.war.dodeploy
+20:12:38,897 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found SeniorEJBHostel.jar in deployment directory. To trigger deployment create a file called SeniorEJBHostel.jar.dodeploy
+20:12:38,897 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015010: The deployment scanner found a directory named META-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\deployments directory, which is a user error. The META-INF directory will not be scanned for deployments, but it is possible that the scanner mayfind other files from the unzipped archive and attempt to deploy them, leading to errors.
+20:12:39,837 INFO  [org.xnio] (MSC service thread 1-1) XNIO Version 3.0.13.GA-redhat-1
+20:12:39,886 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+20:12:39,911 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+20:12:40,142 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+20:12:40,152 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+20:12:40,208 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+20:12:40,366 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+20:12:40,366 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+20:12:40,371 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+20:12:40,370 INFO  [org.jboss.as.security] (MSC service thread 1-11) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+20:12:40,427 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-13) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+20:12:41,255 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+20:12:41,282 INFO  [org.jboss.as.naming] (MSC service thread 1-10) JBAS011802: Starting Naming Service
+20:12:41,283 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-9) JBAS015400: Bound mail session [java:jboss/mail/Default]
+20:12:41,574 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+20:12:41,947 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 3.3.4.Final-redhat-1
+20:12:42,594 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-11) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8181
+20:12:42,674 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-11) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8181
+20:12:43,130 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+20:12:43,140 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/MySqlDS]
+20:12:44,596 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-10) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\deployments
+20:12:44,601 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on 127.0.0.1:4447
+20:12:44,601 INFO  [org.jboss.as.remoting] (MSC service thread 1-14) JBAS017100: Listening on 127.0.0.1:9999
+20:12:44,691 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-11) JBAS015876: Starting deployment of "SeniorEJBHostel.jar" (runtime-name: "SeniorEJBHostel.jar")
+20:12:44,691 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "SeniorWebHostel.war" (runtime-name: "SeniorWebHostel.war")
+20:12:44,691 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "SeniorEJBHostel" (runtime-name: "SeniorEJBHostel")
+20:12:44,763 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (JCA PoolFiller) IJ000610: Unable to fill pool: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.fillToMin(SemaphoreArrayListManagedConnectionPool.java:775) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at org.jboss.jca.core.connectionmanager.pool.mcp.PoolFiller.run(PoolFiller.java:97) [ironjacamar-core-impl-1.0.31.Final-redhat-1.jar:1.0.31.Final-redhat-1]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 5 more
+
+20:12:46,336 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-14) MSC000001: Failed to start service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment "SeniorEJBHostel"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [jboss-as-server-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1980) [jboss-msc-1.1.5.Final-redhat-1.jar:1.1.5.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1913) [jboss-msc-1.1.5.Final-redhat-1.jar:1.1.5.Final-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module "deployment.SeniorEJBHostel:main" from Service Module Loader]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:217)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [jboss-as-server-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module "deployment.SeniorEJBHostel:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.6.Final-redhat-1]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:215)
+	... 7 more
+
+20:12:46,477 INFO  [org.jboss.ws.common.management] (MSC service thread 1-16) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+20:12:46,741 INFO  [org.jboss.as.jpa] (MSC service thread 1-15) JBAS011401: Read persistence.xml for HostelDatabase
+20:12:47,151 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for employeeDatabase
+20:12:47,156 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for HostelDatabase
+20:12:47,209 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named BookTripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:app/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:module/BookTripServiceBean!com.mfu.service.BookTripService
+	java:jboss/exported/SeniorEJBHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:global/SeniorEJBHostel/BookTripServiceBean
+	java:app/SeniorEJBHostel/BookTripServiceBean
+	java:module/BookTripServiceBean
+
+20:12:47,210 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named BookRoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:app/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:module/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:jboss/exported/SeniorEJBHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:global/SeniorEJBHostel/BookRoomServiceBean
+	java:app/SeniorEJBHostel/BookRoomServiceBean
+	java:module/BookRoomServiceBean
+
+20:12:47,211 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named ReservationServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:app/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:module/ReservationServiceBean!com.mfu.service.ReservationService
+	java:jboss/exported/SeniorEJBHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:global/SeniorEJBHostel/ReservationServiceBean
+	java:app/SeniorEJBHostel/ReservationServiceBean
+	java:module/ReservationServiceBean
+
+20:12:47,211 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named GuestServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:app/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:module/GuestServiceBean!com.mfu.service.GuestService
+	java:jboss/exported/SeniorEJBHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:global/SeniorEJBHostel/GuestServiceBean
+	java:app/SeniorEJBHostel/GuestServiceBean
+	java:module/GuestServiceBean
+
+20:12:47,211 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named TripServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:app/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:module/TripServiceBean!com.mfu.service.TripService
+	java:jboss/exported/SeniorEJBHostel/TripServiceBean!com.mfu.service.TripService
+	java:global/SeniorEJBHostel/TripServiceBean
+	java:app/SeniorEJBHostel/TripServiceBean
+	java:module/TripServiceBean
+
+20:12:47,212 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named AdnimServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:app/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:module/AdnimServiceBean!com.mfu.service.AdminService
+	java:jboss/exported/SeniorEJBHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:global/SeniorEJBHostel/AdnimServiceBean
+	java:app/SeniorEJBHostel/AdnimServiceBean
+	java:module/AdnimServiceBean
+
+20:12:47,212 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named BillServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:app/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:module/BillServiceBean!com.mfu.service.BillService
+	java:jboss/exported/SeniorEJBHostel/BillServiceBean!com.mfu.service.BillService
+	java:global/SeniorEJBHostel/BillServiceBean
+	java:app/SeniorEJBHostel/BillServiceBean
+	java:module/BillServiceBean
+
+20:12:47,228 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named OrderProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:app/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:module/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:jboss/exported/SeniorEJBHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:global/SeniorEJBHostel/OrderProductServiceBean
+	java:app/SeniorEJBHostel/OrderProductServiceBean
+	java:module/OrderProductServiceBean
+
+20:12:47,229 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named BookSpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:app/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:module/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:jboss/exported/SeniorEJBHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:global/SeniorEJBHostel/BookSpaServiceBean
+	java:app/SeniorEJBHostel/BookSpaServiceBean
+	java:module/BookSpaServiceBean
+
+20:12:47,229 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named SpaServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:app/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:module/SpaServiceBean!com.mfu.service.SpaService
+	java:jboss/exported/SeniorEJBHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:global/SeniorEJBHostel/SpaServiceBean
+	java:app/SeniorEJBHostel/SpaServiceBean
+	java:module/SpaServiceBean
+
+20:12:47,229 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named RoomServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:app/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:module/RoomServiceBean!com.mfu.service.RoomService
+	java:jboss/exported/SeniorEJBHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:global/SeniorEJBHostel/RoomServiceBean
+	java:app/SeniorEJBHostel/RoomServiceBean
+	java:module/RoomServiceBean
+
+20:12:47,230 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named PromotionServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:app/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:module/PromotionServiceBean!com.mfu.service.PromotionService
+	java:jboss/exported/SeniorEJBHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:global/SeniorEJBHostel/PromotionServiceBean
+	java:app/SeniorEJBHostel/PromotionServiceBean
+	java:module/PromotionServiceBean
+
+20:12:47,230 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named MemberServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:app/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:module/MemberServiceBean!com.mfu.service.MemberService
+	java:jboss/exported/SeniorEJBHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:global/SeniorEJBHostel/MemberServiceBean
+	java:app/SeniorEJBHostel/MemberServiceBean
+	java:module/MemberServiceBean
+
+20:12:47,231 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-15) JNDI bindings for session bean named ProductServiceBean in deployment unit deployment "SeniorEJBHostel.jar" are as follows:
+
+	java:global/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:app/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:module/ProductServiceBean!com.mfu.service.ProductService
+	java:jboss/exported/SeniorEJBHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:global/SeniorEJBHostel/ProductServiceBean
+	java:app/SeniorEJBHostel/ProductServiceBean
+	java:module/ProductServiceBean
+
+20:12:47,908 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011402: Starting Persistence Unit Service 'SeniorEJBHostel.jar#HostelDatabase'
+20:12:48,302 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+20:12:48,314 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+20:12:48,320 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+20:12:48,322 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+20:12:48,395 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: HostelDatabase
+	...]
+20:12:48,704 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 50) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+20:12:48,742 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 50) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:242) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:117) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:85) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:184) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:156) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1827) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1785) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 28 more
+
+20:12:48,745 WARN  [org.hibernate.engine.jdbc.internal.JdbcServicesImpl] (ServerService Thread Pool -- 50) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+20:12:48,989 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:12:49,207 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] (ServerService Thread Pool -- 50) HHH000422: Disabling contextual LOB creation as connection was null
+20:12:49,239 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named OrderProductServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:app/SeniorWebHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:module/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:jboss/exported/SeniorWebHostel/OrderProductServiceBean!com.mfu.service.OrderProductService
+	java:global/SeniorWebHostel/OrderProductServiceBean
+	java:app/SeniorWebHostel/OrderProductServiceBean
+	java:module/OrderProductServiceBean
+
+20:12:49,240 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named BookSpaServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:app/SeniorWebHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:module/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:jboss/exported/SeniorWebHostel/BookSpaServiceBean!com.mfu.service.BookSpaService
+	java:global/SeniorWebHostel/BookSpaServiceBean
+	java:app/SeniorWebHostel/BookSpaServiceBean
+	java:module/BookSpaServiceBean
+
+20:12:49,240 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named SpaServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:app/SeniorWebHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:module/SpaServiceBean!com.mfu.service.SpaService
+	java:jboss/exported/SeniorWebHostel/SpaServiceBean!com.mfu.service.SpaService
+	java:global/SeniorWebHostel/SpaServiceBean
+	java:app/SeniorWebHostel/SpaServiceBean
+	java:module/SpaServiceBean
+
+20:12:49,240 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named BookTripServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:app/SeniorWebHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:module/BookTripServiceBean!com.mfu.service.BookTripService
+	java:jboss/exported/SeniorWebHostel/BookTripServiceBean!com.mfu.service.BookTripService
+	java:global/SeniorWebHostel/BookTripServiceBean
+	java:app/SeniorWebHostel/BookTripServiceBean
+	java:module/BookTripServiceBean
+
+20:12:49,240 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named ReservationServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:app/SeniorWebHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:module/ReservationServiceBean!com.mfu.service.ReservationService
+	java:jboss/exported/SeniorWebHostel/ReservationServiceBean!com.mfu.service.ReservationService
+	java:global/SeniorWebHostel/ReservationServiceBean
+	java:app/SeniorWebHostel/ReservationServiceBean
+	java:module/ReservationServiceBean
+
+20:12:49,241 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named GuestServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:app/SeniorWebHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:module/GuestServiceBean!com.mfu.service.GuestService
+	java:jboss/exported/SeniorWebHostel/GuestServiceBean!com.mfu.service.GuestService
+	java:global/SeniorWebHostel/GuestServiceBean
+	java:app/SeniorWebHostel/GuestServiceBean
+	java:module/GuestServiceBean
+
+20:12:49,241 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named TripServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/TripServiceBean!com.mfu.service.TripService
+	java:app/SeniorWebHostel/TripServiceBean!com.mfu.service.TripService
+	java:module/TripServiceBean!com.mfu.service.TripService
+	java:jboss/exported/SeniorWebHostel/TripServiceBean!com.mfu.service.TripService
+	java:global/SeniorWebHostel/TripServiceBean
+	java:app/SeniorWebHostel/TripServiceBean
+	java:module/TripServiceBean
+
+20:12:49,241 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named EmployeeServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/EmployeeServiceBean!com.mfu.service.EmployeeService
+	java:app/SeniorWebHostel/EmployeeServiceBean!com.mfu.service.EmployeeService
+	java:module/EmployeeServiceBean!com.mfu.service.EmployeeService
+	java:jboss/exported/SeniorWebHostel/EmployeeServiceBean!com.mfu.service.EmployeeService
+	java:global/SeniorWebHostel/EmployeeServiceBean
+	java:app/SeniorWebHostel/EmployeeServiceBean
+	java:module/EmployeeServiceBean
+
+20:12:49,241 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named AdnimServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:app/SeniorWebHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:module/AdnimServiceBean!com.mfu.service.AdminService
+	java:jboss/exported/SeniorWebHostel/AdnimServiceBean!com.mfu.service.AdminService
+	java:global/SeniorWebHostel/AdnimServiceBean
+	java:app/SeniorWebHostel/AdnimServiceBean
+	java:module/AdnimServiceBean
+
+20:12:49,241 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named RoomServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:app/SeniorWebHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:module/RoomServiceBean!com.mfu.service.RoomService
+	java:jboss/exported/SeniorWebHostel/RoomServiceBean!com.mfu.service.RoomService
+	java:global/SeniorWebHostel/RoomServiceBean
+	java:app/SeniorWebHostel/RoomServiceBean
+	java:module/RoomServiceBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named PhoneServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/PhoneServiceBean!com.mfu.service.PhoneService
+	java:app/SeniorWebHostel/PhoneServiceBean!com.mfu.service.PhoneService
+	java:module/PhoneServiceBean!com.mfu.service.PhoneService
+	java:jboss/exported/SeniorWebHostel/PhoneServiceBean!com.mfu.service.PhoneService
+	java:global/SeniorWebHostel/PhoneServiceBean
+	java:app/SeniorWebHostel/PhoneServiceBean
+	java:module/PhoneServiceBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named BillServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/BillServiceBean!com.mfu.service.BillService
+	java:app/SeniorWebHostel/BillServiceBean!com.mfu.service.BillService
+	java:module/BillServiceBean!com.mfu.service.BillService
+	java:jboss/exported/SeniorWebHostel/BillServiceBean!com.mfu.service.BillService
+	java:global/SeniorWebHostel/BillServiceBean
+	java:app/SeniorWebHostel/BillServiceBean
+	java:module/BillServiceBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named HelloWorldBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/HelloWorldBean!com.mfu.ejb.HelloWorld
+	java:app/SeniorWebHostel/HelloWorldBean!com.mfu.ejb.HelloWorld
+	java:module/HelloWorldBean!com.mfu.ejb.HelloWorld
+	java:jboss/exported/SeniorWebHostel/HelloWorldBean!com.mfu.ejb.HelloWorld
+	java:global/SeniorWebHostel/HelloWorldBean
+	java:app/SeniorWebHostel/HelloWorldBean
+	java:module/HelloWorldBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named ProductServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:app/SeniorWebHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:module/ProductServiceBean!com.mfu.service.ProductService
+	java:jboss/exported/SeniorWebHostel/ProductServiceBean!com.mfu.service.ProductService
+	java:global/SeniorWebHostel/ProductServiceBean
+	java:app/SeniorWebHostel/ProductServiceBean
+	java:module/ProductServiceBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named SkillServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/SkillServiceBean!com.mfu.service.SkillService
+	java:app/SeniorWebHostel/SkillServiceBean!com.mfu.service.SkillService
+	java:module/SkillServiceBean!com.mfu.service.SkillService
+	java:jboss/exported/SeniorWebHostel/SkillServiceBean!com.mfu.service.SkillService
+	java:global/SeniorWebHostel/SkillServiceBean
+	java:app/SeniorWebHostel/SkillServiceBean
+	java:module/SkillServiceBean
+
+20:12:49,242 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named PromotionServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:app/SeniorWebHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:module/PromotionServiceBean!com.mfu.service.PromotionService
+	java:jboss/exported/SeniorWebHostel/PromotionServiceBean!com.mfu.service.PromotionService
+	java:global/SeniorWebHostel/PromotionServiceBean
+	java:app/SeniorWebHostel/PromotionServiceBean
+	java:module/PromotionServiceBean
+
+20:12:49,243 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named BookRoomServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:app/SeniorWebHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:module/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:jboss/exported/SeniorWebHostel/BookRoomServiceBean!com.mfu.service.BookRoomService
+	java:global/SeniorWebHostel/BookRoomServiceBean
+	java:app/SeniorWebHostel/BookRoomServiceBean
+	java:module/BookRoomServiceBean
+
+20:12:49,243 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named MemberServiceBean in deployment unit deployment "SeniorWebHostel.war" are as follows:
+
+	java:global/SeniorWebHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:app/SeniorWebHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:module/MemberServiceBean!com.mfu.service.MemberService
+	java:jboss/exported/SeniorWebHostel/MemberServiceBean!com.mfu.service.MemberService
+	java:global/SeniorWebHostel/MemberServiceBean
+	java:app/SeniorWebHostel/MemberServiceBean
+	java:module/MemberServiceBean
+
+20:12:49,420 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011402: Starting Persistence Unit Service 'SeniorWebHostel.war#employeeDatabase'
+20:12:49,422 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 52) JBAS011402: Starting Persistence Unit Service 'SeniorWebHostel.war#HostelDatabase'
+20:12:49,424 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 51) HHH000204: Processing PersistenceUnitInfo [
+	name: employeeDatabase
+	...]
+20:12:49,423 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 52) HHH000204: Processing PersistenceUnitInfo [
+	name: HostelDatabase
+	...]
+20:12:49,752 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 51) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+20:12:49,757 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 51) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:242) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:117) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:85) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:184) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:156) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1827) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1785) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 28 more
+
+20:12:49,763 WARN  [org.hibernate.engine.jdbc.internal.JdbcServicesImpl] (ServerService Thread Pool -- 51) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+20:12:49,764 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 51) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:12:49,765 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] (ServerService Thread Pool -- 51) HHH000422: Disabling contextual LOB creation as connection was null
+20:12:49,786 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 52) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+20:12:49,789 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 52) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:242) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:117) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:85) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:184) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:156) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1827) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1785) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 28 more
+
+20:12:49,794 WARN  [org.hibernate.engine.jdbc.internal.JdbcServicesImpl] (ServerService Thread Pool -- 52) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+20:12:49,794 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 52) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:12:49,794 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] (ServerService Thread Pool -- 52) HHH000422: Disabling contextual LOB creation as connection was null
+20:12:50,222 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 50) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+20:12:50,222 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 52) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+20:12:50,222 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 51) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+20:12:50,237 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+20:12:50,237 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 52) HHH000397: Using ASTQueryTranslatorFactory
+20:12:50,237 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 51) HHH000397: Using ASTQueryTranslatorFactory
+20:12:50,325 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 52) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+20:12:50,816 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000228: Running hbm2ddl schema update
+20:12:50,816 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000102: Fetching database metadata
+20:12:50,819 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 51) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,826 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000319: Could not get database metadata: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,830 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 51) HHH000299: Could not complete schema update: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,841 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000228: Running hbm2ddl schema update
+20:12:50,842 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000102: Fetching database metadata
+20:12:50,847 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 52) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,866 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000228: Running hbm2ddl schema update
+20:12:50,866 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000102: Fetching database metadata
+20:12:50,870 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 50) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,873 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000319: Could not get database metadata: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,882 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000319: Could not get database metadata: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,883 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 52) HHH000299: Could not complete schema update: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,892 ERROR [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 50) HHH000299: Could not complete schema update: java.sql.SQLException: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:151)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:70) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:509) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1799) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [rt.jar:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [rt.jar:1.8.0_131]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/MySqlDS
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:421)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:368)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:510)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:143)
+	... 17 more
+Caused by: javax.resource.ResourceException: IJ000658: Unexpected throwable while trying to create a connection: null
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:421)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:453)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:425)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:354)
+	... 20 more
+Caused by: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:356)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:304)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:834)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:379)
+	... 23 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'seniorhostel'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2369)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2153)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.8.0_131]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:328)
+	... 26 more
+
+20:12:50,919 INFO  [org.jboss.as.protocol] (Remoting "desktop-dnud4lm:MANAGEMENT" task-1) JBAS012119:  cancelled task by interrupting thread Thread[management-handler-thread - 1,5,management-handler-thread]
+20:12:50,940 INFO  [org.jboss.web] (ServerService Thread Pool -- 54) JBAS018210: Register web context: /SeniorWebHostel
+20:12:51,041 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/SeniorWebHostel]] (ServerService Thread Pool -- 54) No Spring WebApplicationInitializer types detected on classpath
+20:12:51,978 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014612: Operation ("deploy") failed - address: ([("deployment" => "SeniorEJBHostel")]) - failure description: {"JBAS014671: Failed services" => {"jboss.deployment.unit.SeniorEJBHostel.POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment \"SeniorEJBHostel\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module \"deployment.SeniorEJBHostel:main\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: com.mfu.serviceBean.BookTripServiceBean from [Module \"deployment.SeniorEJBHostel:main\" from Service Module Loader]"}}
+20:12:52,078 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorWebHostel.war" (runtime-name : "SeniorWebHostel.war")
+20:12:52,078 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorEJBHostel.jar" (runtime-name : "SeniorEJBHostel.jar")
+20:12:52,078 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "SeniorEJBHostel" (runtime-name : "SeniorEJBHostel")
+20:12:52,079 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of deployment "SeniorEJBHostel"
+
+20:12:52,331 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment SeniorEJBHostel (runtime-name: SeniorEJBHostel) in 5ms
+20:12:52,336 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+20:12:52,337 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+20:12:52,337 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 19986ms - Started 1048 of 1086 services (62 services are lazy, passive or on-demand)
+20:12:52,646 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015858: Undeployed "SeniorEJBHostel" (runtime-name: "SeniorEJBHostel")
+20:12:52,646 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit.SeniorEJBHostel.POST_MODULE
+
+20:12:57,139 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015010: The deployment scanner found a directory named META-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the C:\Users\Auey\Desktop\Senior1\Senior1\jBoss 6.4\standalone\deployments directory, which is a user error. The META-INF directory will not be scanned for deployments, but it is possible that the scanner mayfind other files from the unzipped archive and attempt to deploy them, leading to errors.

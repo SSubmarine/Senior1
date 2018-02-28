@@ -1,0 +1,14 @@
+22:26:11,286 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+22:26:11,414 INFO  [org.apache.catalina.core] (MSC service thread 1-3) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+22:26:11,437 INFO  [org.jboss.web] (ServerService Thread Pool -- 79) JBAS018224: Unregister web context: /WebAppEJB
+22:26:11,502 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) JBAS011403: Stopping Persistence Unit Service 'HelloServer1.jar#EmployeeDatabase'
+22:26:11,571 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8080
+22:26:11,612 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8080
+22:26:11,680 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/WebAppEJB]] (ServerService Thread Pool -- 79) Destroying Spring FrameworkServlet 'spring'
+22:26:11,765 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment HelloServer1.jar (runtime-name: HelloServer1.jar) in 342ms
+22:26:11,778 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 79) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Oct 21 20:44:06 ICT 2017]; root of context hierarchy
+22:26:11,859 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 79) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@477e2468: defining beans [employeeController,phoneController,skillController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+22:26:12,422 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) JBAS011403: Stopping Persistence Unit Service 'WebAppEJB.war#EmployeeDatabase'
+22:26:12,489 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+22:26:12,701 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment WebAppEJB.war (runtime-name: WebAppEJB.war) in 1308ms
+22:26:12,764 INFO  [org.jboss.as] (MSC service thread 1-2) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 1337ms

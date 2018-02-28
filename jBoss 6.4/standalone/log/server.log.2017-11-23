@@ -1,0 +1,17 @@
+18:31:43,176 INFO  [org.jboss.web] (ServerService Thread Pool -- 114) JBAS018224: Unregister web context: /HostelWeb
+18:31:43,258 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+18:31:43,291 INFO  [org.apache.catalina.core] (MSC service thread 1-3) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:31:43,338 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/HostelWeb]] (ServerService Thread Pool -- 114) Destroying Spring FrameworkServlet 'spring'
+18:31:43,359 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8181
+18:31:43,379 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 114) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Mon Nov 20 12:03:46 ICT 2017]; root of context hierarchy
+18:31:43,410 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8181
+18:31:43,437 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 114) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4eeae5da: defining beans [bedController,customerController,promotionController,reservController,roomController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+18:31:43,629 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 118) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#RoomHostelDatabase'
+18:31:43,629 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 120) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#CustomerHostelDatabase'
+18:31:43,630 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 122) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#ReservationDatabase'
+18:31:43,630 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 123) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#BedDatabase'
+18:31:43,631 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 121) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#employeeDatabase'
+18:31:43,644 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) JBAS011403: Stopping Persistence Unit Service 'HostelWeb.war#PromotionHostelDatabase'
+18:31:43,703 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/MySqlDS]
+18:31:43,766 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment HostelWeb.war (runtime-name: HostelWeb.war) in 587ms
+18:31:43,800 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 448ms
